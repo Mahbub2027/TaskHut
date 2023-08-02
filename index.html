@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind & daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google font -->
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- custom design -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': '#1D4ED8',
+
+          }
+        }
+      }
+    }
+  </script>
+  <title>TuskHut</title>
+</head>
+
+<body>
+  <header class="container mx-auto">
+    <nav class="p-2">
+      <div class="navbar bg-base-100 flex flex-row justify-between">
+        <div class="">
+          <a class="font-semibold text-3xl"><span class="text-[#EC4899]">Task</span>Hut</a>
+        </div>
+        <div class="flex gap-2">
+          <div class="form-control">
+            <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+          </div>
+          <div>
+            <button class="ml-4 font-medium text-xl"><a href="#">Log in</a></button>
+            <button class="btn bg-[#DB2777] hover:bg-[#EC4899] font-medium text-xl text-white ml-5 normal-case"><a
+                href="#">Sign Up</a></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mx-auto">
+    <!-- Find Top Freelancers -->
+    <!-- 
+      <i class="fa-regular fa-code fa-2xl"></i>    for coding
+      <i class="fa-brands fa-android fa-2xl"></i>      apps and mobile
+      <i class="fa-solid fa-database fa-2xl"></i>      database
+      <i class="fa-solid fa-network-wired fa-2xl"></i>   networking
+      <i class="fa-solid fa-magnifying-glass-chart fa-2xl"></i>    digital marketing
+      <i class="fa-regular fa-swatchbook fa-2xl"></i>     graphics design
+      <i class="fa-solid fa-hotel fa-2xl"></i>     architecture
+      <i class="fa-solid fa-book-atlas fa-2xl"></i>  math
+     -->
+
+    <section class="my-20 ">
+      <h1 class="text-center font-semibold text-2xl lg:text-5xl mb-16">Find Top Freelancers</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-5">
+        <!-- card 1 -->
+        <div class="card w-96 cursor-pointer bg-gray-50 hover:bg-base-200">
+          <figure class="px-10 pt-10">
+            <div class=""><i class="fa-regular fa-file-code fa-2x"></i></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title"><a href="#">Web development & design</a></h2>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card w-96 cursor-pointer bg-gray-50 hover:bg-base-200">
+          <figure class="px-10 pt-10">
+            <div class="mb-2"><i class="fa-regular fa-code fa-2xl"></i></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title"><a href="#">Programming & Software</a></h2>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card w-96 cursor-pointer bg-gray-50 hover:bg-base-200">
+          <figure class="px-10 pt-10">
+            <div class="mb-2"><i class="fa-brands fa-android fa-2xl"></i> </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title"><a href="#">Apps & Mobile</a></h2>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card w-96 cursor-pointer bg-gray-50 hover:bg-base-200">
+          <figure class="px-10 pt-10">
+            <div class="mb-2"><i class="fa-solid fa-database fa-2xl"></i></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title"><a href="#">Database design & Administration</a></h2>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="card w-96 cursor-pointer bg-gray-50 hover:bg-base-200">
+          <figure class="px-10 pt-10">
+            <div class="mb-2"><i class="fa-regular fa-swatchbook fa-2xl"></i></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title"><a href="#">Design & Creative</a></h2>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="card w-96 cursor-pointer bg-gray-50 hover:bg-base-200">
+          <figure class="px-10 pt-10">
+            <div class="mb-2"><i class="fa-solid fa-network-wired fa-2xl"></i></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title"><a href="#">Networking & Hardware</a></h2>
+          </div>
+        </div>
+        <!-- card 7 -->
+        <div class="card w-96 cursor-pointer bg-gray-50 hover:bg-base-200">
+          <figure class="px-10 pt-10">
+            <div class="mb-2"><i class="fa-solid fa-hotel fa-2xl"></i></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title"><a href="#">Engineering & Architecture</a></h2>
+          </div>
+        </div>
+        <!-- card 8 -->
+        <div class="card w-96 cursor-pointer bg-gray-50 hover:bg-base-200">
+          <figure class="px-10 pt-10">
+            <div class="mb-2"><i class="fa-solid fa-magnifying-glass-chart fa-2xl"></i></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title"><a href="#">Degital Marketing</a></h2>
+          </div>
+        </div>
+        <!-- card 9 -->
+        <div class="card w-96 cursor-pointer bg-gray-50 hover:bg-base-200">
+          <!-- <figure class="px-10 pt-10">
+            
+          </figure> -->
+          <div class="card-body items-center text-center">
+            <h2 class="card-title mt-8"><a href="#">Others</a></h2>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+
+
+    <!-- Its easy to get work -->
+    <section class="my-20">
+      <div>
+        <h1 class="text-center font-semibold text-2xl lg:text-5xl">It's Easy to Get Work Done on Guru</h1>
+      </div>
+
+      <div class="flex flex-col lg:flex-row">
+        <!-- card 1 -->
+        <div class="card w-96 bg-base-100 ">
+          <figure class="px-10 pt-10">
+            <img src="./icons/post_job.jpg" alt="Shoes" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-bold">Post a Job</h2>
+            <p>Create your free job posting and start receiving Quotes within hours.</p>
+
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="card w-96 bg-base-100 ">
+          <figure class="px-10 pt-10">
+            <img src="./icons/hire_freelancer.jpg" alt="Shoes" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-bold">Hire Freelancers</h2>
+            <p>Compare the Quotes you receive and hire the best freelance professionals for the job.</p>
+
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="card w-96 bg-base-100 ">
+          <figure class="px-10 pt-10">
+            <img src="./icons/work.png" alt="Shoes" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-bold">Get Work Done</h2>
+            <p>Decide on how and when payments will be made and use WorkRooms to collaborate, communicate and track
+              work.</p>
+
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="card w-96 bg-base-100 ">
+          <figure class="px-10 pt-10">
+            <img src="./icons/post_job.jpg" alt="Shoes" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-bold">Pay safely</h2>
+            <p>Choose from multiple payment methods with SafePay payment protection.</p>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
